@@ -1,0 +1,26 @@
+{
+    "name": "pawcode/plugin-installer",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mlaxwong",
+            "email": "mlaxwong@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "paw\\plugin\\installer\\": "src/"
+        }
+    },
+    "require": {
+        "composer-plugin-api": "^1.1",
+        "composer/composer": "^1.9"
+    },
+    "extra": {
+        "class": "paw\\plugin\\installer\\Plugin"
+    }
+}
